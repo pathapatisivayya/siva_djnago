@@ -1,0 +1,295 @@
+{% load static %}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>IIS Windows Server</title>
+<style>
+*{
+box-sizing:border-box;
+}
+body{
+margin:0px;
+font-family:arial;
+}
+.top{
+background:yellow;
+padding:5px;
+}
+.header{
+background-color:#1abc9c;
+padding:60px;
+text-align:center;
+color:white;
+}
+.navbar{
+background-color:black;
+overflow:hidden;
+}
+.navbar a{
+text-decoration:none;
+display:inline-block;
+height:50px;
+padding:18px 30px;
+color:white;
+border-right:1px solid white;
+}
+.navbar a:hover{
+background:red;
+color:white;
+}
+.row{
+width:100%;
+}
+.leftcolumn{
+float:left;
+width:30%;
+background-color:#f1f1f1;
+padding:20px;
+height:auto;
+}
+.fimg{
+height:200px;
+background:lightgray;
+width:100%;
+}
+.main{
+float:left;
+width:70%;
+background-color:white;
+padding:20px;
+}
+.mimg{
+height:400px;
+background-color:lightgray;
+width:100%;
+}
+.footer{
+background-color:black;
+color:yellow;
+clear:both;
+height:80px;
+text-align:center;
+font-size:30;
+padding:20px;
+}
+.row2{
+width:100%;
+}
+.lftmain{
+float:left;
+width:60%;
+background-color:pink;
+padding:20px;
+height:auto;
+}
+.rsidebar{
+float:left;
+width:40%;
+background-color:orange;
+color:blue;
+height:auto;
+padding:20px;
+text-align:justify;
+}
+.row2:after{
+content:"";
+clear:both;
+display:table;
+}
+#contact{
+width:100%;
+background-color:red;
+color:white;
+height:200px;
+}
+#contact table{
+text-align:center;
+width:100%;
+padding:0px;
+}
+#contact table th,td{
+padding:20px;
+}
+.banner{
+width:100%;
+clear:both;
+display:table;
+}
+@media screen and (max-width: 700px) {
+.navbar a{
+display:block;
+width:100%;
+text-align:center;
+float:none;
+border-bottom:1px solid white;
+}
+.leftcolumn{
+width:100%;
+}
+.main{
+width:100%;
+}
+.lftmain,.rsidebar{
+width:100%;
+}
+.navbar{
+
+}
+}
+@media screen and (max-width: 500px) {
+.contact{
+width:100%;
+}
+.contact table{
+width:100%;
+}
+.pattuimg{
+
+
+}
+}
+
+</style>
+</head>
+<body>
+<div class="top">
+<h4 style="text-align:center;">Welcome to my website</h4>
+</div>
+
+<div class="header">
+<h1>Hanuman Online Sarees shopieee</h1>
+<p>All types of <b style="background:orange;border:2px solid black;">SAREES</b> Available Here.</p>
+</div>
+
+<div class="navbar">
+
+<a href="#expt">PATTU</a>
+<a href="#expt">EXCLUSIVE PATTU</a>
+<a href="#slk">SILK</a>
+<a href="#drs">DRESSES</a>
+<a href="#lhs">LEHENGAS</a>
+<a href="#contact" style="float:right;" target="_blank">Contact</a>
+<a href="#abt" style="float:right;">About</a>
+</div>
+<div class="row">
+	<div class="leftcolumn" id="slk">
+		<h2>Silk</h2>
+		<h5>Photos of Silk</h5>
+	<div class="fimg"><a href="{% static "images/dimages.jpg" %}"><img src="{% static "images/dimages.jpg" %}" style="width:100%;height:200px;"></a></div>
+		<p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+		<h2>More DRESSES</h2>
+		<p>Lorem ipsum dolor sit ame.</p>
+	<div class="fimg" style="height:200px;"><a href="{% static "images/dimages.jpg" %}"><img src="{% static "images/dimages1.jpg" %}" style="width:100%;height:200px;"></a></div><br>
+	<div class="fimg" style="height:200px;"><a href="{% static "images/dimages3.jpg" %}"><img src="{% static "images/dimages2.jpg" %}" style="width:100%;height:200px;"></a></div><br>
+	<div class="fimg" style="height:200px;"><a href="image3.jpg"><img src="{% static "images/dimages4.jpg" %}" style="width:100%;height:200px;"></a></div><br>
+	<div class="fimg" style="height:250px;"><a href="image4.jpg"><img src="{% static "images/dimages4.jpg" %}" style="width:100%;height:250px;"></a></div><br>
+	<div class="fimg" style="height:250px;"><a href="{% static "images/dimages4.jpg" %}"><img src="{% static "images/dimages4.jpg" %}" style="width:100%;height:250px;"></a></div><br>
+	</div>
+	<div class="main" id="drs">
+		<h2>DRESSES</h2>
+		<h5>Title description, Dec 7, 2017</h5>
+		<div class="mimg"><a href="image7.jpg"><img src="{% static "images/dimages4.jpg" %}" style="width:100%;height:400px;"></a></div>
+		<p>Some text..</p>
+		<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+		<h2>DRESSES</h2>
+		<h5>Title description, Sep 2, 2017</h5>
+		<div class="mimg"><a href="image8.jpg"><img src="{% static "images/dimages4.jpg" %}" style="width:100%;height:400px;"></a></div>
+		<p>Some text..</p>
+		<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+		<div class="mimg"><a href="image9.jpg"><img src="{% static "images/dimages4.jpg" %}" style="width:100%;height:400px;"></a></div>
+	</div>
+</div>
+<div class="footer">
+<p style="color:pink;font-size:15px;">&copy all rights reserved</p>
+</div>
+<div id="contact" class="contact">
+<table class="table">
+<tr>
+<th>Name</th>
+<th>Contact</th>
+<th>Email</th>
+<th>Address</th>
+</tr>
+<tr>
+<td>Hanuman</td>
+<td>9010271382</td>
+<td>hanuman111@gmai.com</td>
+<td>Guravareddy Palem</td>
+</tr>
+<tr>
+<td>Guptha</td>
+<td>9618655823</td>
+<td>guptha111@gmai.com</td>
+<td>Guravareddy Palem</td>
+</tr>
+</table>
+</div>
+<div class="banner" id="lhs">
+<div class="pattuimg" style="float:left;width:50%;margin-top:10px;">
+	<a href="image10.jpg"><img src="{% static "images/exp1.jpg" %}" style="width:100%;height:400px;"></a>
+</div>
+<div class="pattuimg" style="float:right;width:50%;margin-top:10px;">
+	<a href="image11.jpg"><img src="{% static "images/exp2.jpg" %}" style="width:100%;height:400px;"></a>
+</div>
+<div class="pattuimg" style="float:right;width:50%;margin-top:10px;">
+<a href="image12.jpg"><img src="{% static "images/exp3.jpg" %}" style="width:100%;height:400px;"></a>
+</div>
+<div class="pattuimg" style="float:right;width:50%;margin-top:10px;">
+<a href="image13.jpg"><img src="{% static "images/exp3.jpg" %}" style="width:100%;height:400px;"></a>
+</div>
+</div>
+
+<div class="about" id="abt" style="background-color:blue;width:100%;height:550px;padding:55px;color:white;">
+<h3 style="color:white;background-color:red;display:inline;padding:5px;">Hanuman Sarees</h3>
+<p>hanuman sarees is one of the most and best saress provider to their customers.it established in 2000 and it is located in 
+<b style="background-color:red;">guravareddypalem</b> village 
+maddi padu mandal.we are providing dress,sarees.. like silk,pattu,kanchipuram pattu sarees nd benaras pattu sarees and kolkatta sarees ,rajasthan joot sarees
+and as well as pattu lehengas etc....the price of pattu saress range starts fromm 3000 to 30000. we are providing good quality along with low price compared to our
+compiteters.hanuman sarees is one of the most and best saress provider to their customers.it established in 2000 and it is located in guravareddypalem village 
+maddi padu mandal.we are providing dress,sarees.. like silk,pattu,kanchipuram pattu sarees nd benaras pattu sarees and kolkatta sarees ,rajasthan joot sarees
+and as well as pattu lehengas etc....the price of pattu saress range starts fromm 3000 to 30000. we are providing good quality along with low price compared to our
+compiteters.hanuman sarees is one of the most and best saress provider to their customers.it established in 2000 and it is located in guravareddypalem village 
+maddi padu mandal.we are providing dress,sarees.. like silk,pattu,kanchipuram pattu sarees nd benaras pattu sarees and kolkatta sarees ,rajasthan joot sarees
+and as well as pattu lehengas etc....the price of pattu saress range starts fromm 3000 to 30000. we are providing good quality along with low price compared to our
+compiteters.hanuman sarees is one of the most and best saress provider to their customers.it established in 2000 and it is located in guravareddypalem village 
+maddi padu mandal.we are providing dress,sarees.. like silk,pattu,kanchipuram pattu sarees nd benaras pattu sarees and kolkatta sarees ,rajasthan joot sarees
+and as well as pattu lehengas etc...hanuman sarees is one of the most and best saress provider to their customers.it established in 2000 and it is located in guravareddypalem village 
+maddi padu mandal.we are providing dress,sarees.. like silk,pattu,kanchipuram pattu sarees nd benaras pattu sarees and kolkatta sarees ,rajasthan joot sarees
+and as well as pattu lehengas etc...hanuman sarees is one of the most and best saress provider to their customers.it established in 2000 and it is located in guravareddypalem village 
+maddi padu mandal.we are providing dress,sarees.. like silk,pattu,kanchipuram pattu sarees nd benaras pattu sarees and kolkatta sarees ,rajasthan joot sarees
+and as well as pattu lehengas etc...
+</div>
+
+
+<div class="ptt" id="expt" style="margin-top:1px;">
+	<div class="patuu" style="width:100%;height:500px;">
+		<a href="dimages1.jpg"><img src="{% static "images/dimages.jpg" %}" style="width:25%;height:500px;float:left;"></a>
+		<a href="dimages2.jpg"><img src="{% static "images/dimages.jpg" %}" style="width:25%;height:500px;float:right;"></a>
+		<a href="dimages3.jpg"><img src="{% static "images/dimages.jpg" %}" style="width:25%;height:500px;float:right;"></a>
+		<a href="dimages4.jpg"><img src="{% static "images/dimages.jpg" %}" style="width:25%;height:500px;float:right;"></a>
+	</div>
+	
+	<div class="patuu" style="width:100%;height:500px;margin-top:2px;">
+		<a href="exp1.jpg"><img src="{% static "images/exp1.jpg" %}" style="width:25%;height:500px;float:right;"></a>
+		<a href="exp2.jpg"><img src="{% static "images/exp2.jpg" %}" style="width:25%;height:500px;float:left;"></a>
+		<a href="exp3.jpg"><img src="{% static "images/exp3.jpg" %}" style="width:25%;height:500px;float:left;"></a>
+		<a href="exp4.jpg"><img src="{% static "images/exp4.jpg" %}" style="width:25%;height:500px;float:right;"></a>
+	</div>
+	
+	<div class="patuu" style="width:100%;height:500px;margin-top:2px;">
+		<a href="exp5.jpg"><img src="{% static "images/exp5.jpg" %}" style="width:25%;height:500px;float:right;"></a>
+		<a href="exp6.jpg"><img src="{% static "images/exp6.jpg" %}" style="width:25%;height:500px;float:left;"></a>
+		<a href="exp7.jpg"><img src="{% static "images/exp7.jpg" %}" style="width:25%;height:500px;float:left;"></a>
+		<a href="exp9.jpg"><img src="{% static "images/exp8.jpg" %}" style="width:25%;height:500px;float:right;"></a>
+	</div>
+	
+</div>
+
+<div class="foot" style="background-color:lime;color:blue;text-align:center;width:100%;height:50px;padding:1px;margin-top:5px;">
+<h4> thank you for visiting my site :)</h4>
+</div>
+
+</body>
+</html>
