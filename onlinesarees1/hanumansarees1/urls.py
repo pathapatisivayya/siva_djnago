@@ -10,5 +10,5 @@ from hanumansarees1 import views
 
 
 urlpatterns = [
-    url(r'saress', views.dataview),
+    url(r'', views.dataview),
 ]

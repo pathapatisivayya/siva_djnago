@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = ')dizaxs**c$30$*cr5^-f374+wf3a1lb1t5_k6@^u!z$+skf02'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True 
 
 ALLOWED_HOSTS = ['*']
 
@@ -67,7 +67,7 @@ ROOT_URLCONF = 'onlinesarees1.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [r'C:\tested_project\onlinesarees1\hanumansarees1\template'],
+        'DIRS': ['template'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
